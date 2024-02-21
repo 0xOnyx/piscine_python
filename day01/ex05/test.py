@@ -3,6 +3,7 @@ from matplotlib import pyplot as plt
 from load_image import ft_load
 from pimp_image import ft_invert, ft_red, ft_green, ft_blue, ft_grey
 
+
 def set_function_name(func, array):
     plt.imshow(func(array))
     plt.show()
