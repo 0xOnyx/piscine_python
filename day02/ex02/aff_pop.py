@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def main():
+    """Main function."""
     data = load("population_total.csv")
 
     switzerland_data = data[data['country'] == 'Switzerland'].iloc[0, 1:]

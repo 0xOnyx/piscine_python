@@ -4,17 +4,20 @@ from load_image import ft_load
 
 
 def cut_and_transpose(image_array):
+    """Cut and transpose the image."""
     cute_image = cut_square(image_array)
     return manual_transpose(cute_image)
 
 
 def cut_square(image_array):
+    """Cut the image to a square."""
     size = min(image_array.shape[:2])
     square_image = image_array[:size, :size]
     return square_image
 
 
 def manual_transpose(image_array):
+    """Transpose the image."""
     transposed_image = np.zeros((
         image_array.shape[1], image_array.shape[0], image_array.shape[2]),
        dtype=image_array.dtype)
@@ -27,6 +30,7 @@ def manual_transpose(image_array):
 
 
 def main():
+    """Main function."""
     image_path = "animal.jpeg"
     image_array = ft_load(image_path)
 

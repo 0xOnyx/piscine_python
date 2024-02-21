@@ -10,9 +10,13 @@ def pow(x: int | float) -> int | float:
 
 
 def outer(x: int | float,  function) -> object:
+    """Decorator that limits the number of calls to the function.
+     If the function is called more than limit times."""
     count = x
 
     def inner():
+        """Inner function that limits the
+         number of calls to the function."""
         nonlocal count
         count = function(count)
         return count

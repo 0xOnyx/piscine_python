@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def main():
+    """Main function."""
     data = load("life_expectancy_years.csv")
 
     if data is None:

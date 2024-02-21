@@ -4,6 +4,7 @@ import pandas as pd
 
 
 def main():
+    """Main function."""
     life_expectancy_year = load("life_expectancy_years.csv")
     come_per_person = load(
         "income_per_person_gdppercapita_ppp_inflation_adjusted.csv")
